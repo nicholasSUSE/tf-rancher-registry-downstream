@@ -1,0 +1,2 @@
+rancher/cis-operator:v1.0.12
+rancher/kubectl:v1.26.3
