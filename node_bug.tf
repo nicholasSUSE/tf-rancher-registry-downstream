@@ -96,9 +96,9 @@ resource "rancher2_cluster_sync" "bug_sync" {
   cluster_id = rancher2_cluster.bug_cluster.id
 
   timeouts {
-    create = "5m"
-    update = "5m"
-    delete = "5m"
+    create = "10m"
+    update = "10m"
+    delete = "10m"
   }
 }
 
@@ -120,11 +120,11 @@ resource "rancher2_app_v2" "cis_benchmark_bug_cluster" {
   wait = false
 
   # comment/uncomment to reproduce/disable the bug
-  # system_default_registry = "${aws_instance.default_registry.public_dns}:5000"
+  system_default_registry = "${aws_instance.default_registry.public_dns}:5000"
   timeouts {
-    create = "3m"
-    update = "3m"
-    delete = "3m"
+    create = "5m"
+    update = "5m"
+    delete = "5m"
   }
 }
 

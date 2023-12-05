@@ -1,6 +1,5 @@
 #-----------------------------------------------------------------------------------------------------
 # Paster your credentials here
-
 # AWS access key used to create infrastructure
 # aws_access_key = ""
 
@@ -11,10 +10,10 @@
 # aws_session_token = ""
 #-----------------------------------------------------------------------------------------------------
 # just a tag
-creator = "nick-mapps"
+creator = "nick"
 
 # Prefix added to names of all resources
-prefix = "nick-bug"
+prefix = "present"
 
 # Admin password to use for Rancher server bootstrap, min. 12 characters
 rancher_server_admin_password = "123456789.Rancher"
